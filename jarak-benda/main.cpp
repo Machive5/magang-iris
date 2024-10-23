@@ -50,14 +50,10 @@ int main(){
         vector<Moments> m(contours.size());
 
         if (contours.size()>0){
-            //drawContours(frame, contours, -1, Scalar(0, 255, 0)),2;
             for (int i=0; i<contours.size(); i++){
                 minEnclosingCircle(contours[i], center[i], radius[i]);
 
                 if (radius[i]>area){
-                    //m[i] = moments(contours[i]);
-                    //Point center(static_cast<int>(m[i].m10/m[i].m00)+static_cast<int>(rects[i].width/2), static_cast<int>(m[i].m01/m[i].m00)+static_cast<int>(rects[i].height/2));
-                    //cout<<calcDistance(radius[i])<<endl;
                     Point tpos(static_cast<int>(center[i].x-radius[i]), static_cast<int>(center[i].y+radius[i]));
                     circle(frame, center[i], cvRound(radius[i]), Scalar(0,255,0), 2);
                     putText(frame, to_string(calcDistance(radius[i])) + " cm", tpos, QT_FONT_NORMAL, 1, Scalar(0,0,255), 2);
@@ -67,9 +63,6 @@ int main(){
         }
         
         imshow("video", frame);
-        //imshow("hsv", hsv);
-        //imshow("thres", thres);
-
         
         if (waitKey(1) == 'q') {
             break;

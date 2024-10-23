@@ -56,8 +56,6 @@ int main(){
     float posBefore[2] = {0,0};
     steady_clock::time_point tawal = steady_clock::now();
 
-    //frame = imread("/home/abrar/Documents/robotik/P2/posisi/foto.png");
-
     while (true)
     {
         cap >> frame;
@@ -84,44 +82,31 @@ int main(){
             Point l1((1280/2),(720/2));
             Point l2((m.m10/m.m00), (m.m01/m.m00));
             line(frame, l1, l2, Scalar(255,0,0));
-
-            //float x = round((posAwal[0]-center.x)*100);
-            //float y = round((center.y-posAwal[1])*100);
             
             if (m.m00 != 0){
                 Point tKoor(30,30);
                 Point sKoor(30,60);
                 Point jKoor(30, 90);
-                putText(frame, "Posisi: (" + toString(x/10) + ", " + toString(y/10) + ")", tKoor, QT_FONT_NORMAL, 1, Scalar(0,0,255), 1);
-                //cout<<posBefore[0]<<", "<<posBefore[1]<<endl;
-                //cout<<(x/10)<<", "<<(y/10)<<endl;
+                putText(frame, "Posisi: (" + toString(x/10) + "m, " + toString(y/10) + "m)", tKoor, QT_FONT_NORMAL, 1, Scalar(0,0,255), 1);
 
                 steady_clock::time_point tnow = steady_clock::now();
                 nanoseconds dur = tnow - tawal;
                 tawal = tnow;
 
                 float speed = (distance(((x/10) - posBefore[0]), ((y/10) - posBefore[1])))/(dur.count()/pow(10,9));
-                //cout<<(dur.count()/pow(10,9))<<endl;
-                //cout<<speed<<endl;
 
                 posBefore[0] = x/10;
                 posBefore[1] = y/10;
 
                 putText(frame, "Speed: " + toString(speed)+"m/s", sKoor, QT_FONT_NORMAL, 1, Scalar(0,0,255), 1);
-                //cout<<toString(x/10) + ", " + toString(y/100)<<endl;
 
                 float jarak = distance(((posAwal[0]-(1280/2)) - x), ((720/2) - posAwal[1]) - y)/10;
                 putText(frame, "distance: " + toString(jarak) +"m", jKoor, QT_FONT_NORMAL, 1, Scalar(0,0,255), 1);
 
-                
             }
         }
 
-
-
         imshow("video", frame);
-        //imshow("hsv", HSV);
-        //imshow("thres", thres);
 
         if(waitKey(1) == 'q'){
             break;
