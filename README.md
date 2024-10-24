@@ -10,8 +10,8 @@ This project is an internship assignment for the IRIS Robotics Research Team.
 ## Project Details
 This project consists of two parts:
 
-1. [Detect objects based on color and estimate the distance of the object.](##Object-Detection)
-2. [Detecting the position of the robot and it's distance from the ball.](##Robot-Position)
+1. [Detect objects based on color and estimate the distance of the object.](#object-detection)
+2. [Detecting the position of the robot and it's distance from the ball.](#robot-position)
 
 ## Object Detection
 ### How It Works
