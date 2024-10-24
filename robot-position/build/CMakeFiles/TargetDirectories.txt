@@ -1,3 +1,0 @@
-/home/abrar/Documents/robotik/P2/tugas1/robot-position/build/CMakeFiles/rebuild_cache.dir
-/home/abrar/Documents/robotik/P2/tugas1/robot-position/build/CMakeFiles/edit_cache.dir
-/home/abrar/Documents/robotik/P2/tugas1/robot-position/build/CMakeFiles/robot-position.dir
