@@ -1,3 +1,0 @@
-/home/abrar/Documents/robotik/P2/tugas1/object-detection/build/CMakeFiles/rebuild_cache.dir
-/home/abrar/Documents/robotik/P2/tugas1/object-detection/build/CMakeFiles/edit_cache.dir
-/home/abrar/Documents/robotik/P2/tugas1/object-detection/build/CMakeFiles/object-detection.dir
