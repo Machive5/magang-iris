@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/abrar/Documents/robotik/P2/tugas1/build",
+  "command": "/usr/bin/c++   -isystem /usr/include/opencv4  -g   -o CMakeFiles/jarak-benda.dir/main.cpp.o -c /home/abrar/Documents/robotik/P2/tugas1/jarak-benda/main.cpp",
+  "file": "/home/abrar/Documents/robotik/P2/tugas1/jarak-benda/main.cpp"
+}
+]
