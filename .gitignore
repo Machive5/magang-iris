@@ -1,4 +1,4 @@
-jarak-benda/build/
-posisi-robot/build/
+object-detection/build/
+robot-position/build/
 .vscode
 .gitignore
