@@ -40,7 +40,7 @@ int main(){
     int s[2] = {170,255};
     int v[2] = {200,255};
 
-    namedWindow("trackbar");
+    //namedWindow("trackbar");
 
     createTrackbar("h min", "trackbar", &h[0], 255);
     createTrackbar("s min", "trackbar", &s[0], 255);
