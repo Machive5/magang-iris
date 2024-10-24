@@ -1,3 +1,0 @@
-/home/abrar/Documents/robotik/P2/tugas1/build/CMakeFiles/rebuild_cache.dir
-/home/abrar/Documents/robotik/P2/tugas1/build/CMakeFiles/edit_cache.dir
-/home/abrar/Documents/robotik/P2/tugas1/build/CMakeFiles/jarak-benda.dir
